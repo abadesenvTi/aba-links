@@ -33,3 +33,11 @@ background: linear-gradient(to bottom right, #62BDE8, #8BC34A);}
 
 .btn-gmail { background-color: #FFFFFF; }
 .btn-gmail:hover { background-color: #F9FAFB; }
+
+/* Botão Registro de Ponto */
+.btn-registro {
+    background: linear-gradient(to right, #f9a534, #f57c00);
+}
+.btn-registro:hover {
+    background: linear-gradient(to right, #f57c00, #f9a534);
+}
