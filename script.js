@@ -65,4 +65,10 @@ document.getElementById('gmail-portal').addEventListener('click', function () {
    window.open('https://mail.google.com/', '_blank');
 });
 
+// Registro de Ponto
+document.getElementById('registro-ponto-portal').addEventListener('click', function () {
+    // TODO: substitua pela URL correta do seu sistema de registro de ponto
+    window.open('https://portalrh.abaweb.org/FrameHTML/Web/App/RH/PortalMeuRH/#/login', '_blank');
+});
+
 
