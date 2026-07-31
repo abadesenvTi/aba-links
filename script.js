@@ -57,7 +57,7 @@ document.getElementById('macmillan-portal').addEventListener('click', function (
 
 // Abanet
 document.getElementById('abanet-portal').addEventListener('click', function () {
-    window.open('http://abanet.abaweb.org/index2.php#', '_blank');
+    window.open('https://abanet.abaweb.org', '_blank');
 });
 
 // Gmail
