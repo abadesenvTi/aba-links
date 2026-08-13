@@ -63,9 +63,6 @@ background: linear-gradient(to right, #1E5765, #00A99D);}
 .btn-tellme {
     background: linear-gradient(to right, #0d4f96, #f57c00);
 }
-.btn-tellme:hover {
-    background: linear-gradient(to right, #f57c00, #0d4f96);
-}
 
 .btn-gmail { background-color: #FFFFFF; }
 
