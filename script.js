@@ -55,9 +55,14 @@ document.getElementById('macmillan-portal').addEventListener('click', function (
     window.open('https://www.macmillaneducationeverywhere.com/', '_blank');
 });
 
-// Abanet
+// ABA.net
 document.getElementById('abanet-portal').addEventListener('click', function () {
     window.open('https://abanet.abaweb.org', '_blank');
+});
+
+// ABA Tellme
+document.getElementById('aba-tellme-portal').addEventListener('click', function () {
+  window.open('https://www.agendatellme.com.br/aba/Authentication/Login?returnUrl=%2Faba', '_blank');
 });
 
 // Gmail

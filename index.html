@@ -2,8 +2,10 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Links - ABA</title>
+    <!-- // ALTERE AQUI O FAVICON: troque o caminho abaixo pela imagem desejada -->
+    <link rel="icon" type="image/png" href="IMG/Icone barra superior ( Favicon ).png">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,13 +21,13 @@
 <body>
 
     <div class="min-h-screen flex flex-col items-center justify-center p-4">
-        
 
-        <div class="mb-8 fade-in">
-            <img src="IMG/ABA.png" alt="Logo ABA" class="w-[400px] mx-auto mb-6">
+
+        <div class="mb-8 fade-in w-full max-w-md">
+            <img src="IMG/ABA-English-Education.png" alt="Logo ABA" class="w-56 sm:w-72 md:w-[400px] max-w-full mx-auto mb-6">
         </div>
 
-        <div class="w-full max-w-md bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-white/50 fade-in">
+        <div class="w-full max-w-md bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-4 sm:p-6 border border-white/50 fade-in">
             
             <h2 class="font-extrabold text-3xl text-blue-900 text-center mb-6"></h2>
 
@@ -54,11 +56,19 @@
                     </div>
                 </a>
 
-                <!-- Botão 4: Abanet -->
+                <!-- Botão 4: ABA.net -->
                 <a id="abanet-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-abanet text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
                     <div class="flex items-center">
-                        <img src="IMG/ABANET.png" alt="Ícone Abanet" class="w-14 h-7 mr-3 rounded-full">
+                        <img src="IMG/ABA.png" alt="Ícone ABA.net" class="w-14 h-7 mr-3 rounded-full">
                         <span>ABA.net</span>
+                    </div>
+                </a>
+
+                <!-- Botão 5: ABA Tellme -->
+                <a id="aba-tellme-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-tellme text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center">
+                        <img src="IMG/ABA TELL ME.png" alt="Ícone ABA Tellme" class="w-14 h-7 mr-3 rounded-full">
+                        <span>ABA Tellme</span>
                     </div>
                 </a>
 
