@@ -3,90 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Acesso rápido aos portais da ABA English Education.">
     <title>Links - ABA</title>
-    <!-- // ALTERE AQUI O FAVICON: troque o caminho abaixo pela imagem desejada -->
     <link rel="icon" type="image/png" href="IMG/Icone barra superior ( Favicon ).png">
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
-    <div class="min-h-screen flex flex-col items-center justify-center p-4">
+    <main class="page-shell">
 
 
-        <div class="mb-8 fade-in w-full max-w-md">
-            <img src="IMG/ABA-English-Education.png" alt="Logo ABA" class="w-56 sm:w-72 md:w-[400px] max-w-full mx-auto mb-6">
+        <div class="logo-wrap fade-in">
+            <img src="IMG/ABA-English-Education.png" alt="ABA English Education" class="brand-logo">
         </div>
 
-        <div class="w-full max-w-md bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-4 sm:p-6 border border-white/50 fade-in">
+        <section class="card fade-in" aria-labelledby="page-title">
             
-            <h2 class="font-extrabold text-3xl text-blue-900 text-center mb-6"></h2>
+            <h1 id="page-title" class="sr-only">Acessos ABA</h1>
 
-            <div class="space-y-4 mb-6">
+            <nav class="portal-list" aria-label="Portais e serviços ABA">
                 <!-- Botão 1: Professor -->
-                <a id="professor" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-professor text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/TOTVS.png" alt="Ícone Portal Professor" class="w-14 h-7 mr-3 rounded-full">
-                        <span>Portal Professor</span>
-                    </div>
+                <a href="https://portalaluno.abaweb.org/FrameHTML/Web/App/Edu/PortaldoProfessor/#/login" target="_blank" rel="noopener noreferrer" class="portal-link btn-professor">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/TOTVS.png" alt=""></span>
+                    <span class="portal-name">Portal Professor</span>
                 </a>
 
                 <!-- Botão 2: Registro de Ponto -->
-                <a id="registro-ponto-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-registro text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/TOTVS.png" alt="Ícone Registro de Ponto" class="w-14 h-7 mr-3 rounded-full">
-                        <span>Registro de Ponto</span>
-                    </div>
+                <a href="https://portalrh.abaweb.org/FrameHTML/Web/App/RH/PortalMeuRH/#/login" target="_blank" rel="noopener noreferrer" class="portal-link btn-registro">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/TOTVS.png" alt=""></span>
+                    <span class="portal-name">Registro de Ponto</span>
                 </a>
 
                 <!-- Botão 3: Macmillan -->
-                <a id="macmillan-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-macmillan text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/MACMILLAN.png" alt="Ícone Macmillan" class="w-14 h-7 mr-3 rounded-full">
-                        <span>Macmillan</span>
-                    </div>
+                <a href="https://mee.macmillaneducation.com/?lang=en" target="_blank" rel="noopener noreferrer" class="portal-link btn-macmillan">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/MACMILLAN.png" alt=""></span>
+                    <span class="portal-name">Macmillan</span>
                 </a>
 
-                <!-- Botão 4: ABA.net -->
-                <a id="abanet-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-abanet text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/ABA.png" alt="Ícone ABA.net" class="w-14 h-7 mr-3 rounded-full">
-                        <span>ABA.net</span>
-                    </div>
+                <!-- Botão 4: Spark -->
+                <a href="https://learn.eltngl.com/" target="_blank" rel="noopener noreferrer" class="portal-link btn-ngl">
+                    <span class="logo-slot" aria-hidden="true"><span class="ngl-mark"></span></span>
+                    <span class="portal-name">Spark</span>
                 </a>
 
-                <!-- Botão 5: ABA Tellme -->
-                <a id="aba-tellme-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-tellme text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/ABA TELL ME.png" alt="Ícone ABA Tellme" class="w-14 h-7 mr-3 rounded-full">
-                        <span>ABA Tellme</span>
-                    </div>
+                <!-- Botão 5: ABA.net -->
+                <a href="https://abanet.abaweb.org" target="_blank" rel="noopener noreferrer" class="portal-link btn-abanet">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/ABA.png" alt=""></span>
+                    <span class="portal-name">ABA.net</span>
                 </a>
 
-                <!-- Botão 5: Gmail -->
-                <a id="gmail-portal" href="#" target="_blank" class="group flex items-center justify-between p-4 rounded-xl btn-gmail text-gray-700 font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-                    <div class="flex items-center">
-                        <img src="IMG/GMAIL.png" alt="Ícone Gmail" class="w-14 h-7 mr-3">
-                        <span>Gmail</span>
-                    </div>
+                <!-- Botão 6: ABA Tellme -->
+                <a href="https://www.agendatellme.com.br/aba/Authentication/Login?returnUrl=%2Faba" target="_blank" rel="noopener noreferrer" class="portal-link btn-tellme">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/ABA TELL ME.png" alt=""></span>
+                    <span class="portal-name">ABA Tellme</span>
                 </a>
-            </div>
-            <footer class="text-center text-gray-500 text-xs">
+
+                <!-- Botão 7: Gmail -->
+                <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="portal-link btn-gmail">
+                    <span class="logo-slot" aria-hidden="true"><img src="IMG/GMAIL.png" alt=""></span>
+                    <span class="portal-name">Gmail</span>
+                </a>
+            </nav>
+            <footer>
                 <p>&copy; <span id="current-year"></span> ABA English Education. Todos os direitos reservados.</p>
             </footer>
 
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

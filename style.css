@@ -1,77 +1,231 @@
+:root {
+    color-scheme: light;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
 body {
-    font-family: 'Inter', sans-serif;
-
-    background-image: url('IMG/FUNDO\ 3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
+    min-height: 100%;
+    margin: 0;
 }
 
-/* iPhone X até iPhone 17 Pro Max (telas estreitas em pé) */
-@media (max-width: 430px) {
-    .space-y-4 > a {
-        padding: 0.85rem 1rem;
-    }
-    .space-y-4 span {
-        font-size: 0.95rem;
-    }
+body {
+    background: #0d4f96 url("IMG/FUNDO-otimizado.webp") center / cover no-repeat fixed;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-/* iPad 7ª geração até iPad 11ª geração (retrato e paisagem) */
-@media (min-width: 768px) and (max-width: 1194px) {
-    .max-w-md {
-        max-width: 30rem;
-    }
+.page-shell {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100svh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
-
-/* Animação de fade-in simples */
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
+.logo-wrap,
+.card {
+    width: 100%;
+    max-width: 28rem;
 }
 
-/* === ÁREA DE CORES DOS BOTÕES === */
+.logo-wrap {
+    margin-bottom: 2rem;
+}
 
+.brand-logo {
+    display: block;
+    width: min(100%, 25rem);
+    height: auto;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid rgb(255 255 255 / 50%);
+    border-radius: 1rem;
+    background: rgb(255 255 255 / 80%);
+    box-shadow: 0 10px 25px rgb(0 0 0 / 15%);
+    backdrop-filter: blur(12px);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.portal-list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.portal-link {
+    display: flex;
+    min-height: 3.75rem;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 15%);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.portal-link:hover {
+    transform: scale(1.025);
+    box-shadow: 0 8px 14px rgb(0 0 0 / 20%);
+    filter: brightness(0.96);
+}
+
+.portal-link:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #0d4f96;
+}
+
+.logo-slot {
+    display: flex;
+    width: 4rem;
+    height: 2rem;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-slot img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.portal-name {
+    flex: 1;
+    line-height: 1.25;
+}
 
 .btn-professor {
-background: linear-gradient(to right, #1E5765, #00A99D);}
+    background: linear-gradient(to right, #1e5765, #00a99d);
+}
 
-.btn-macmillan { background-color: #DC2626; }
-.btn-macmillan:hover { background-color: #B91C1C; }
+.btn-registro {
+    background: linear-gradient(to right, #f9a534, #f57c00);
+}
+
+.btn-macmillan {
+    background: #dc2626;
+}
+
+.btn-ngl {
+    color: #fff;
+    background: linear-gradient(90deg, #000 0%, #171717 40%, #8a7100 72%, #ffd400 100%);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 80%);
+}
+
+.ngl-mark {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 0.25rem solid #ffd400;
+    background: transparent;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 45%);
+}
 
 .btn-abanet {
-    background: linear-gradient(
-        90deg,
-        #b01f52 0%,
-        #a81d55 45%,
-        #8e1f6e 60%,
-        #0d4f96 100%
-    );
+    background: linear-gradient(90deg, #b01f52 0%, #a81d55 45%, #8e1f6e 60%, #0d4f96 100%);
 }
 
 .btn-tellme {
     background: linear-gradient(to right, #0d4f96, #f57c00);
 }
 
-.btn-gmail { background-color: #FFFFFF; }
-
-.btn-gmail:hover { background-color: #F9FAFB; }
-
-/* Botão Registro de Ponto */
-.btn-registro {
-    background: linear-gradient(to right, #f9a534, #f57c00);
+.btn-gmail {
+    color: #374151;
+    background: #fff;
 }
-.btn-registro:hover {
-    background: linear-gradient(to right, #f57c00, #f9a534);
+
+footer {
+    color: #6b7280;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.8s ease-out both;
+}
+
+@media (max-width: 430px) {
+    .logo-wrap {
+        margin-bottom: 1.5rem;
+    }
+
+    .brand-logo {
+        width: 18rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .portal-link {
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1194px) {
+    .logo-wrap,
+    .card {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        animation: none;
+    }
+
+    .portal-link {
+        transition: none;
+    }
 }
