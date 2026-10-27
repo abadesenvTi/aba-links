@@ -5,75 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Acesso rápido aos portais da ABA English Education.">
     <title>Links - ABA</title>
-    <link rel="icon" type="image/png" href="IMG/Icone barra superior ( Favicon ).png">
+    <link rel="icon" type="image/png" href="img/Icone barra superior ( Favicon ).png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="redesign.css?v=3">
 </head>
 <body>
+    <div class="left-shape" aria-hidden="true"></div>
+    <div class="decor decor-red-top" aria-hidden="true"></div>
+    <div class="decor decor-blue-top" aria-hidden="true"></div>
+    <div class="decor decor-red-bottom" aria-hidden="true"></div>
+    <div class="decor decor-blue-bottom" aria-hidden="true"></div>
 
     <main class="page-shell">
-
-
-        <div class="logo-wrap fade-in">
-            <img src="IMG/ABA-English-Education.png" alt="ABA English Education" class="brand-logo">
-        </div>
-
-        <section class="card fade-in" aria-labelledby="page-title">
-            
+        <section class="portal-panel" aria-labelledby="page-title">
             <h1 id="page-title" class="sr-only">Acessos ABA</h1>
 
             <nav class="portal-list" aria-label="Portais e serviços ABA">
-                <!-- Botão 1: Professor -->
                 <a href="https://portalaluno.abaweb.org/FrameHTML/Web/App/Edu/PortaldoProfessor/#/login" target="_blank" rel="noopener noreferrer" class="portal-link btn-professor">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/TOTVS.png" alt=""></span>
-                    <span class="portal-name">Portal Professor</span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/TOTVS.svg" alt="" class="brand-icon brand-icon--monochrome brand-icon--totvs"></span>
+                    <span class="portal-name">Portal do Professor</span>
                 </a>
 
-                <!-- Botão 2: Registro de Ponto -->
                 <a href="https://portalrh.abaweb.org/FrameHTML/Web/App/RH/PortalMeuRH/#/login" target="_blank" rel="noopener noreferrer" class="portal-link btn-registro">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/TOTVS.png" alt=""></span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/TOTVS.svg" alt="" class="brand-icon brand-icon--totvs"></span>
                     <span class="portal-name">Registro de Ponto</span>
                 </a>
 
-                <!-- Botão 3: Macmillan -->
                 <a href="https://mee.macmillaneducation.com/?lang=en" target="_blank" rel="noopener noreferrer" class="portal-link btn-macmillan">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/MACMILLAN.png" alt=""></span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/MACMILLAN.svg" alt="" class="brand-icon brand-icon--monochrome brand-icon--macmillan"></span>
                     <span class="portal-name">Macmillan</span>
                 </a>
 
-                <!-- Botão 4: Spark -->
-                <a href="https://learn.eltngl.com/" target="_blank" rel="noopener noreferrer" class="portal-link btn-ngl">
-                    <span class="logo-slot" aria-hidden="true"><span class="ngl-mark"></span></span>
+                <a href="https://learn.eltngl.com/" target="_blank" rel="noopener noreferrer" class="portal-link btn-spark">
+                    <span class="icon-slot" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/></svg></span>
                     <span class="portal-name">Spark</span>
                 </a>
 
-                <!-- Botão 5: ABA.net -->
                 <a href="https://abanet.abaweb.org" target="_blank" rel="noopener noreferrer" class="portal-link btn-abanet">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/ABA.png" alt=""></span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/ABANET.svg" alt="" class="brand-icon brand-icon--monochrome brand-icon--abanet"></span>
                     <span class="portal-name">ABA.net</span>
                 </a>
 
-                <!-- Botão 6: ABA Tellme -->
                 <a href="https://www.agendatellme.com.br/aba/Authentication/Login?returnUrl=%2Faba" target="_blank" rel="noopener noreferrer" class="portal-link btn-tellme">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/ABA TELL ME.png" alt=""></span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/ABATELLME.svg" alt="" class="brand-icon brand-icon--monochrome brand-icon--abatellme"></span>
                     <span class="portal-name">ABA Tellme</span>
                 </a>
 
-                <!-- Botão 7: Gmail -->
                 <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer" class="portal-link btn-gmail">
-                    <span class="logo-slot" aria-hidden="true"><img src="IMG/GMAIL.png" alt=""></span>
+                    <span class="icon-slot" aria-hidden="true"><img src="img/GMAIL.svg" alt="" class="brand-icon brand-icon--gmail"></span>
                     <span class="portal-name">Gmail</span>
                 </a>
             </nav>
-            <footer>
-                <p>&copy; <span id="current-year"></span> ABA English Education. Todos os direitos reservados.</p>
-            </footer>
+
+            <div class="logo-wrap">
+                <img src="img/logo aba.png" alt="ABA English Education" class="brand-logo">
+            </div>
 
         </section>
+
+        <section class="building-panel" aria-label="Unidades da ABA English Education">
+            <img src="img/predios.png" alt="Prédios das unidades ABA English Education" class="building-composition">
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year"></span> ABA English Education. Todos os direitos reservados.</p>
+        </footer>
     </main>
 
     <script src="script.js?v=3"></script>
