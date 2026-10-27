@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    background: #0d4f96 url("IMG/FUNDO-otimizado.webp") center / cover no-repeat fixed;
+  background: #0d4f96 url("Imagens/FUNDO-otimizado.webp") center / cover no-repeat fixed;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 

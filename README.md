@@ -41,7 +41,7 @@ A interface atual inclui:
 - Elementos decorativos azuis e vermelhos criados com CSS.
 - Rodapé com ano atualizado dinamicamente.
 
-Os recursos oficiais utilizados estão em `img/`:
+Os recursos oficiais utilizados estão em `Imagens/`:
 
 - `TOTVS.svg`
 - `MACMILLAN.svg`
@@ -137,7 +137,7 @@ Foram verificados:
 
 ```text
 ABA Links/
-├── img/
+├── Imagens/
 │   ├── ABANET.svg
 │   ├── ABATELLME.svg
 │   ├── GMAIL.svg
@@ -199,7 +199,7 @@ Edite apenas `redesign.css`. As cores institucionais estão centralizadas nas va
 
 ### Atualizar imagens
 
-Substitua os arquivos em `img/` preservando:
+Substitua os arquivos em `Imagens/` preservando:
 
 - Nome do arquivo.
 - Proporção.
